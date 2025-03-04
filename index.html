@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Check-Out Form Design</title>
+
+    <!--font awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="inner-wrapper cart">
+        <span class="title">Your Cart</span>
+        <div class="products">
+          <div class="product">
+            <img src="product.svg" alt="" />
+            <div class="product-desc">
+              <span class="name">Cheese Burger</span>
+              <p>Extra Spicy</p>
+            </div>
+            <div class="product-count">
+              <button>-</button>
+              <span>2</span>
+              <button>+</button>
+            </div>
+            <span class="price">$32.76</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-wrapper coupons">
+        <span class="title">Apply Coupons</span>
+        <form action="#">
+          <input type="text" placeholder="coupon code" />
+          <button>Apply</button>
+        </form>
+      </div>
+
+      <div class="inner-wrapper checkout">
+        <span class="title">Checkout</span>
+        <div class="details">
+          <span>cart subtotal:</span>
+          <span>$32.76</span>
+          <span>Coupons discount:</span>
+          <span>$2.82</span>
+          <span>Shipping fees:</span>
+          <span>$5.00</span>
+        </div>
+        <div class="footer">
+          <span class="price"><sup>$</sup>34.94</span>
+          <button>Checkout</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
